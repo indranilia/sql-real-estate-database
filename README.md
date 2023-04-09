@@ -94,19 +94,3 @@ made, the listings change, so no house is purchased and available.
 - D - changes persist from function to function. (NOTE:For testing purposes, 
 the data is cleared upon initialization but this can be easily changed 
 in `create.py`.)
-
-## HCs and LOs
-
-**algorithms** - I specified all my inputs and outputs and maintained clear, 
-consistent steps all throughout. More details can be found in code comments.
-
-**communication** - I specified all doc strings and left comments for important 
-bits. I clearly set my assumptions up for everything in this file.
-
-**sql** - I followed best practices like ACID transactions, Normal Forms, and 
-index-based search. I chose SQLAlchemy for security, and to make use of the 
-faker library so I could test large data sets at once.
-
-**testing** - While making use of existing libraries, I manually filter checked 
-my entries. I generated lots of fake data for testing. While testing, for example,
-I found that my listing statuses weren't working properly, so I changed the code. 
