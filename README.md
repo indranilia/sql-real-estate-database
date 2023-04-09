@@ -1,7 +1,7 @@
 # Real Estate Head Office
 ## Overview
 
-I coded this Assignment in SQL Alchemy. 
+A fictitious real estate database with data and queries made as part of coursework. 
 
 ## Execution
 
@@ -37,6 +37,34 @@ How the output of the queries looks (example):
 ![Example queries](Outputs.png)
 
 ## Implementation notes
+
+
+###Inserting data
+
+(from the assignment description)
+
+1. Whenever a house is listed then the following things need to happen:
+  - All the relevant details of that house need to be captured, ie. at least: seller details, # of bedrooms, # of bathrooms, listing price, zip code, date of listing, the listing estate agent, and the appropriate office.
+2. Whenever a house is sold then the following things need to happen:
+  - The estate agent commission needs to be calculated. This happens on a sliding scale:
+      - For houses sold below $100,000 the commission is 10%
+      - For houses between $100,000 and $200,000 the commission is 7.5%
+      - For houses between $200,000 and $500,000 the commission is 6%
+      - For houses between $500,000 and $1,000,000 the commission is 5%
+      - For houses above $1,000,000 the commission is 4%
+  - All appropriate details related to the sale must be captured, ie. at least: buyer details, sale price, date of sale, the selling estate agent.
+  - The original listing must be marked as sold.
+
+###Queries
+
+(from the assignment description)
+
+Find the top 5 offices with the most sales for that month.
+Find the top 5 estate agents who have sold the most for the month (include their contact details and their sales details so that it is easy contact them and congratulate them).
+Calculate the commission that each estate agent must receive and store the results in a separate table.
+For all houses that were sold that month, calculate the average number of days on the market.
+For all houses that were sold that month, calculate the average selling price
+
 
 ### Normalization
 
